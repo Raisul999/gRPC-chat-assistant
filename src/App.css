@@ -82,3 +82,8 @@ h1 {
         width: 200px;
         margin-right: 5px;
     }
+
+    .input-container{
+        margin: 50px;
+        display: flex;
+    }
