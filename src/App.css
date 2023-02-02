@@ -81,9 +81,21 @@ h1 {
     .text-input {
         width: 200px;
         margin-right: 5px;
+        width: 70%;
     }
 
     .input-container{
         margin: 50px;
         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
     }

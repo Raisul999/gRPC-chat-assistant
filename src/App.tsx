@@ -84,7 +84,7 @@ function App() {
 
   return (
     <div>
-      <h3 style={{textAlign:'center'}}>Start Conversing With Eliza... </h3>
+      <h3 style={{ textAlign: 'center' }}>Start Conversing With Eliza... </h3>
       <div className='container'>
         {responses.map((resp, i) => {
           return (
@@ -96,8 +96,8 @@ function App() {
                   : 'user-resp-container'
               }
             >
-              {resp.sender==='eliza'?<p className='resp-text'><span style={{margin:'0 .2rem'}}>Eliza:</span>{resp.text}</p>:
-                <p className='resp-text'><span style={{margin:'0 .2rem'}}>User:</span>{resp.text}</p>
+              {resp.sender === 'eliza' ? <p className='resp-text'><span style={{ margin: '0 .2rem' }}>Eliza:</span>{resp.text}</p> :
+                <p className='resp-text'><span style={{ margin: '0 .2rem' }}>User:</span>{resp.text}</p>
               }
             </div>
           )
@@ -113,7 +113,6 @@ function App() {
           />
 
           <button
-          className='btn'
             onClick={handleSend}
           >
             Send
